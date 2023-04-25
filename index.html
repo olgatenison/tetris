@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script type="text/javascript">
+      function SayHelloWithName(person) {
+        alert("Hello " + person);
+      }
+    </script> -->
+    <title>Tetris</title>
+  </head>
+  <body>
+    <body>
+        <input type="button" value="Click me" onclick="MoveDiv()" />
+    
+        <div
+          id="MyDiv"
+          style="
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+          "
+        ></div>
+
+    <script type="text/javascript">
+      function MoveDiv() {
+        var my_div = document.getElementById("MyDiv");
+        var alter_top_value = parseInt(my_div.style.top);
+        my_div.style.top = alter_top_value + 100 + "px";
+      }
+    </script>
+
+    <!-- <script type="text/javascript">
+      function addElement() {
+        const newDiv = document.createElement("div");
+        document.body.appendChild(newDiv);
+      }
+    </script> -->
+  </body>
+</html>

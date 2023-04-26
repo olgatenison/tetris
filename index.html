@@ -4,30 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- <script type="text/javascript">
       function SayHelloWithName(person) {
         alert("Hello " + person);
       }
     </script> -->
-    <title>Tetris</title>
-  </head>
-  <body>
-    <body>
-        <input type="button" value="Click me" onclick="StarteTimeout()"/>
-        <input type="button" value="Create element" onclick="CreateElement()" />
-
-        <!-- <div
-          id="MyDiv"
-          style="
-            position: absolute;
-            top: 50px;
-            left: 100px;
-            width: 200px;
-            height: 100px;
-            background-color: red;
-          "
-        ></div> -->
-
+    
     <script type="text/javascript">
     
     
@@ -40,8 +23,8 @@
         // var minX = 0;
         // var maxX = windowWidth - blockWidth; 
 
-    function randomierX(){
-var windowWidth = window.document.body.offsetWidth;
+            function randomierX(){
+                var windowWidth = window.document.body.offsetWidth;
                 var minX = 0;
                 var maxX = windowWidth; 
                 var randomX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
@@ -49,22 +32,8 @@ var windowWidth = window.document.body.offsetWidth;
                 var randomXValue = randomX.toString() + 'px'; 
                 return randomXValue
 
-    }
-              
-
-        //  function CalculateSomething(a, b) {
-        //  return a * b;
-        //  }
-        //  var result = CalculateSomething(4, 5);
-        //  alert(result);
-        
-        // function CalculateSomething(minX, maxX) {
-        //     return Math.floor(Math.random() * (maxX - minX + 1)) + minX;
-        // }
-        
-
-
-        
+            }
+       
         //clear part
 
         var allElements = []
@@ -106,9 +75,27 @@ var windowWidth = window.document.body.offsetWidth;
 
       function StarteTimeout(){
         window.setTimeout("MoveDiv();", 5);
-        }
+      }
 
     </script>
-   
+    <title>Tetris</title>
+  </head>
+  <body>
+    <body>
+        <input type="button" value="Click me" onclick="StarteTimeout()"/>
+        <input type="button" value="Create element" onclick="CreateElement()" />
+
+        <!-- <div
+          id="MyDiv"
+          style="
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+          "
+        ></div> -->
+
   </body>
 </html>

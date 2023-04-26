@@ -13,7 +13,7 @@
   </head>
   <body>
     <body>
-        <input type="button" value="Click me" onclick="MoveDiv()" />
+        <input type="button" value="Click me" onclick="StarteTimeout()" />
     
         <div
           id="MyDiv"
@@ -31,8 +31,14 @@
       function MoveDiv() {
         var my_div = document.getElementById("MyDiv");
         var alter_top_value = parseInt(my_div.style.top);
-        my_div.style.top = alter_top_value + 1 + "px";
+        my_div.style.top = alter_top_value + 100 + "px";
+        
+        StarteTimeout();
       }
+      function StarteTimeout(){
+         window.setTimeout("MoveDiv();", 100);
+      }
+     
     </script>
 
     <!-- <script type="text/javascript">
